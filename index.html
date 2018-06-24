@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        var firstValue = 2;
+        var number = 2;
+        squerTo(firstValue, number)
+
+        function squerTo(firstValue, number){
+
+            var result = firstValue;
+            for(var i = 0; i < number; i++){
+                result *= firstValue;
+            }
+            console.log(result)
+            return result;
+            
+        }
+     
+        var valueResult = document.getElementById('result');
+        valueResult.innerHTML = squerTo(firstValue, number);
+
+    </script>
+</body>
+</html>
